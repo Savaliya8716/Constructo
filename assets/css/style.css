@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #f47425;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section {
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+img {
+    display: block;
+}
+
+
+/* -------------------- Common Start ------------------------------------------- */
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.title_span {
+    font-family: "Crimson Text", serif;
+    font-size: 25px;
+    color: #f47425;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.title_h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 0.29em;
+    text-transform: capitalize;
+}
+
+.title_p {
+    font-weight: 300;
+}
+
+.btn_my {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.btn_my.hover-filled-slide-right::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+}
+
+.btn-1::before {
+    background-color: #f47425;
+    transition: 0.3s ease-out;
+}
+
+.btn-1 span {
+    color: rgb(255,255,255);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+}
+
+.btn_my span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+.btn_my:hover span{
+    color: #000000;
+}
+
+.btn_my.hover-filled-slide-right:hover::before {
+    width: 0%;
+}
+
+/* -------------------- Common End ------------------------------------------- */
+
+/* -------------------- Service Start ------------------------------------------- */
+
+.Services {
+    background: url(../img/service_bg.png);
+}
+
+.service_box {
+    margin: 0 15px 40px;
+    padding: 25px 30px 30px;
+    background: #fff;
+    box-shadow: 0 0 25px 0 rgb(41 61 88 / 6%);
+    transition: all 0.3s ease-in;
+}
+
+.service_icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fbfbfb;
+    text-align: center;
+    margin: 0 0 15px;
+    font-size: 30px;
+    line-height: 75px;
+    color: #f47425;
+    transition: all 0.3s ease-in;
+    z-index: 0;
+    position: relative;
+}
+
+.service_box i {
+    color: #f47425;
+    transition: all 0.3s ease-in;
+}
+
+
+/* ------------ After,Before,Hover ------- */
+
+.service_icon::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f47425;
+    content: '';
+    z-index: -1;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.service_box:hover .service_icon::after {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service_box:hover i {
+    color: #fff;
+}
+
+/* -------------------- Service End ------------------------------------------- */
+
+.counter_main {
+    background: url(../img/counter_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.counter_main::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000000;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.counter,
+.counter+span {
+    font-size: 50px;
+    color: #f47425;
+    font-weight: 600;
+}
+
+.counter_p {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* -------------------- Blog Start ------------------------------------------- */
+
+.blog_post {
+    margin: 0 15px 30px;
+}
+
+.blog_content {
+    padding: 40px 30px;
+    border: 1px solid #eee;
+    border-bottom: 5px double #d5d1d1;
+    background: #f8f8f8;
+}
+
+/* -------------------- Blog End ------------------------------------------- */
