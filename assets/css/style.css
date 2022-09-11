@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -28,6 +29,11 @@ img {
     display: block;
 }
 
+p {
+    color: #797979;
+    line-height: 1.7em;
+}
+
 
 /* -------------------- Common Start ------------------------------------------- */
 .title {
@@ -44,7 +50,8 @@ img {
     font-weight: 600;
 }
 
-.title_h2 {
+.title_h2,
+.abotus_h2 {
     font-size: 42px;
     font-weight: bold;
     margin: 0 0 0.29em;
@@ -82,7 +89,7 @@ img {
 }
 
 .btn-1 span {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(28, 31, 30);
     transition: 0.2s 0.1s;
 }
@@ -101,7 +108,7 @@ img {
     transition: 0.3s;
 }
 
-.btn_my:hover span{
+.btn_my:hover span {
     color: #000000;
 }
 
@@ -109,7 +116,38 @@ img {
     width: 0%;
 }
 
+.back-to-top {
+    background-color: rgba(253, 161, 43, 0.7);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 2px solid #f47425;
+    border-radius: 45px;
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 15px;
+    bottom: 90px;
+    transition: all 0.2s;
+}
+
 /* -------------------- Common End ------------------------------------------- */
+
+/* -------------------- Bannerr Start ------------------------------------------- */
+/* -------------------- Bannerr End -------------------------------------------  */
+
+/* -------------------- About Me Start ------------------------------------------- */
+/* -------------------- About Me End ------------------------------------------- */
+
+/* -------------------- Aboutus Start ------------------------------------------- */
+.aboutus_span {
+    font-family: "Crimson Text", serif;
+    font-size: 25px;
+    color: #f47425;
+}
+
+/* -------------------- Aboutus End ------------------------------------------- */
 
 /* -------------------- Service Start ------------------------------------------- */
 
@@ -176,6 +214,19 @@ img {
 
 /* -------------------- Service End ------------------------------------------- */
 
+/*  -------------------- Contact us Start ------------------------------------------- */
+.Contact {
+    background: #f47425;
+    position: relative;
+    text-align: center;
+}
+
+/* -------------------- Contact us End ------------------------------------------- */
+
+/* -------------------- Our Projects Start ------------------------------------------- */
+/* -------------------- Our Projects End ------------------------------------------- */
+
+/* -------------------- Counter Start ------------------------------------------- */
 .counter_main {
     background: url(../img/counter_bg.jpg);
     background-size: cover;
@@ -211,6 +262,150 @@ img {
     font-size: 25px;
 }
 
+/* -------------------- Counter End ------------------------------------------- */
+
+/* -------------------- our team Start ------------------------------------------- */
+/* -------------------- our team End ------------------------------------------- */
+
+/* -------------------- Testimonial Start ------------------------------------------- */
+/* -------------------- Testimonial End ------------------------------------------- */
+
+/* -------------------- Clients Start ------------------------------------------- */
+
+.Clients {
+    position: relative;
+    z-index: 1;
+    background: url(../img/copmay_bg.jpg) center center no-repeat;
+    text-align: center;
+    padding: 110px 0;
+}
+
+.Clients::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000000;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.slide{
+    align-items: center;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* -------------------- Clients End ------------------------------------------- */
+
 /* -------------------- Blog Start ------------------------------------------- */
 
 .blog_post {
@@ -224,4 +419,22 @@ img {
     background: #f8f8f8;
 }
 
+.blog_img img {
+    opacity: 1;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.blog_post .blog_img {
+    position: relative;
+    background: #323335;
+}
+
+.blog_post:hover .blog_img img {
+    opacity: 0.5;
+}
+
 /* -------------------- Blog End ------------------------------------------- */
+
+/* -------------------- footer Start ------------------------------------------- */
+/* -------------------- footer End ------------------------------------------- */
